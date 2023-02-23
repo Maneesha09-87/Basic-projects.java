@@ -1,0 +1,162 @@
+import java.util.*;
+class Breakfast
+{
+    Scanner sc = new Scanner(System.in);
+    void A()
+    {
+        System.out.println("Available TIFFEN Items");
+        System.out.println("1.DOSA-->Rs.20\n2.ONION DOSA-->Rs.30\n3.IDLY-->Rs.20\n4.PONGAL-->Rs.30\n5.PURI-->Rs.40\n6.EXIT");
+        int ch=0;
+        int tot= 0;
+        do
+        {
+            System.out.println("Enter Your Choice");
+            ch = sc.nextInt();
+            switch(ch)
+            {
+                case 1:
+                    System.out.println("Price of Dosa is---Rs.20");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 2:
+                    System.out.println("Price of Onion Dosa is---Rs.30");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 3:
+                    System.out.println("Price of Idly is---Rs.20");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 4:
+                    System.out.println("Price of Pongal is---Rs.30");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 5:
+                    System.out.println("Price of Puri is---Rs.40");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 6:
+                    break;
+            }
+        }while(ch!=6);
+        System.out.println("Pay Bill at the Counter!");
+    }
+   }
+class Lunch
+{
+    Scanner sc = new Scanner(System.in);
+    void B()
+    {
+        System.out.println("Available LUNCH Items");
+        System.out.println("1.RICE-CURRY-->Rs.50\n2.PAROTA-DAL-->Rs.40\n3.GOBI RICE-->Rs.60\n4.CHICKEN RICE-->Rs.80\n5.EXIT");
+        int ch=0;
+        int tot= 0;
+        do
+        {
+            System.out.println("Enter Your Choice");
+            ch = sc.nextInt();
+            switch(ch)
+            {
+                case 1:
+                    System.out.println("Price of Rice-Curry is---Rs.50");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 2:
+                    System.out.println("Price of Parota-Dal is---Rs.40");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 3:
+                    System.out.println("Price of Gobi Rice is---Rs.60");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 4:
+                    System.out.println("Price of Chicken rice is---Rs.80");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 5:
+                    break;
+            }
+        }while(ch!=5);
+        System.out.println("Pay Bill at the Counter!");
+    }
+   
+    }
+class Supper
+{
+    Scanner sc = new Scanner(System.in);
+    void C()
+    {
+        System.out.println("Available SUPPER Items");
+        System.out.println("1.RICE-CURRY-->Rs.50\n2.CHAPATHI-DAL-->Rs.40\n3.EGG RICE-->Rs.60\n4.EXIT");
+        int ch=0;
+        int tot= 0;
+        do
+        {
+            System.out.println("Enter Your Choice");
+            ch = sc.nextInt();
+            switch(ch)
+            {
+                case 1:
+                    System.out.println("Price of Rice-Curry is---Rs.50");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 2:
+                    System.out.println("Price of Chapathi-Dal is---Rs.40");
+                    System.out.println("Your Order is Placed...!");
+                    break;
+                case 3:
+                    System.out.println("Price of Egg Rice is---Rs.60");
+                    System.out.println("your order is placed...!");
+                    break;
+                 case 4:
+                    break;
+            }
+        }while(ch!=4);
+        }
+    }
+class Details
+{
+    Scanner sc=new Scanner(System.in);
+    void D()
+    {   
+        System.out.print("\nEnter your Name:");
+        String name=sc.next();
+        System.out.print("\nEnter Your Mobile Number:");
+        int mobile=sc.nextInt();
+        System.out.print("\nEnter Your Destination Place:");
+        String place=sc.next();
+        System.out.print("\n........THANKS FOR FILLING THE DETAILS........!");
+        System.out.print("\n......YOUR ORDER IS PLACED......!");
+    }
+}
+public class Project3
+{
+    public static void main(String[] args)
+    {
+        Scanner V = new Scanner(System.in);
+        Breakfast bf = new Breakfast();
+        Lunch l=new Lunch();
+        Supper s=new Supper();
+        Details d=new Details();
+        int k=0;
+        do
+        {   
+            System.out.println("1.BREAKFAST\n2.LUNCH\n3.SUPPER\n4.DETAILS\n5.EXIT");
+            System.out.println("Enter Your Choice");
+            k = V.nextInt();
+            switch(k)
+            {
+                case 1:
+                    bf.A();
+                    break;
+                case 2:
+                    l.B();
+                   break ;
+                case 3:
+                    s.C();
+                case 4:
+                    d.D();
+            }
+         } 
+        while(k!=0);
+    }
+}
